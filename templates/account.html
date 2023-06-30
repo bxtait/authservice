@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Information</title>
+<h2>Account Information</h2>
+<p>Username: {{ user.username }}</p>
+<p>Email: {{ user.email }}</p>
+<p>Password: {{ user.password }}</p>
+
+  <<form action="{{ url_for('account') }}" method="POST">>
+  <h2>Update Account Information</h2>
+  <label for="username">Username:</label>
+  <input type="text" name="username" value="{{ user.username }}" required>
+  <label for="email">Email:</label>
+  <input type="email" name="email" value="{{ user.email }}" required>
+  <label for="password">Password:</label>
+  <input type="password" name="password" required>
+  <button type="submit">Update</button>
+</form>
+
+</body>
+</html>

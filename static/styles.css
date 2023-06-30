@@ -1,0 +1,43 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+width: 400px;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 5px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+}
+
+.form-group input {
+width: 100%;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+.form-group input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+}
+
+.error {
+color: red;
+}
+
+.text-center {
+text-align: center;
+}
